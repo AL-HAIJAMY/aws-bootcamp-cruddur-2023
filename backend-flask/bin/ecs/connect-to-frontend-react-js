@@ -1,11 +1,11 @@
 #! /usr/bin/bash
 if [ -z "$1" ]; then
-  echo "Please provide TASK_ID argument eg ./bin/ecs/connect-to-backend-flask c76cf3400b6b4b46a158565b6ea951ae"
+  echo "Please provide TASK_ID argument eg ./bin/ecs/connect-to-frontend-react-js c76cf3400b6b4b46a158565b6ea951ae" 
   exit 1
 fi
 TASK_ID=$1
 
-CONTAINER_NAME=backend-flask
+CONTAINER_NAME=frontend-react-js
 
 echo "TASK ID : $TASK_ID"
 echo "Container Name: $CONTAINER_NAME"
@@ -15,5 +15,5 @@ aws ecs execute-command  \
 --cluster cruddur \
 --task $TASK_ID \
 --container $CONTAINER_NAME \
---command "/bin/bash" \
+--command "/bin/sh" \
 --interactive
