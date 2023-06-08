@@ -125,7 +125,6 @@ def before_first_request():
 
 @app.route('/api/health-check')
 def health_check():
-  
   return {'success': True}, 200
   
 # we dont need it in PROD
