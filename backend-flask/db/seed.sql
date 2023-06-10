@@ -1,8 +1,8 @@
 
 INSERT INTO public.users (display_name, email, handle, cognito_user_id)
 VALUES
-  ('Mohammed Alhaijamy','mohd.abduraqeeb@gmail.com','alhaijamy' ,'61b60a42-e046-4c56-b231-fcfa0acb581c'),
-  ('Ahmed Alhaijamy', 'mohd.abduraqeeb@gmail.com','ahmed' ,'698ec9c9-7131-4de0-9a95-67cc84bc2ddb'),
+  ('Mohammed Alhaijamy','mohd.abduraqeeb@gmail.com','alhaijamy' ,'Mock'),
+  ('Ahmed Alhaijamy', 'mohd.abduraqeeb@gmail.com','ahmed' ,'MOCK'),
   ('Harry Potter', 'harry@alhaijamy.com','harry' ,'MOCK');
 
 INSERT INTO public.activities (user_uuid, message, expires_at)
