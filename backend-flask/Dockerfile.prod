@@ -6,6 +6,11 @@ COPY requirements.txt requirements.txt
 
 RUN pip3 install -r requirements.txt
 
+# ----------------------------------------------------------
+# RUN apt-get update -y   "only for debugging "
+# RUN apt-get install iputils-ping -y    "only for debugging "
+# ------------------------------------------------------------
+
 COPY . .
 
 # ENV FLASK_DEBUG=1
