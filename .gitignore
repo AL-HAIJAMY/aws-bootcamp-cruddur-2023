@@ -2,3 +2,5 @@ docker/**/*
 frontend-react-js/build/*
 *.env
 session-manager-plugin.deb
+docker/dynamodb/shared-local-instance.db
+docker/dynamodb/shared-local-instance.db
