@@ -4,3 +4,4 @@ frontend-react-js/build/*
 session-manager-plugin.deb
 docker/dynamodb/shared-local-instance.db
 docker/dynamodb/shared-local-instance.db
+node_modules
